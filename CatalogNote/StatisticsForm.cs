@@ -15,7 +15,7 @@ namespace CatalogNote
         private void StatisticsForm_Load(object sender, EventArgs e)
         {
             cbStudent.DataSource = Program.Catalog.Students;
-            cbStudent.DisplayMember = "Name";
+            cbStudent.DisplayMember = "DisplayName";
             cbStudent.ValueMember = "Id";
 
             cbDiscipline.DataSource = Program.Catalog.Discipline;
@@ -54,9 +54,10 @@ namespace CatalogNote
 
             var table = notes.Select(n => new
             {
-                Student = Program.Catalog.Students.First(st => st.Id == n.StudentId).Name,
+                Student = Program.Catalog.Students.First(st => st.Id == n.StudentId).DisplayName,
                 Discipline = Program.Catalog.Discipline.First(d => d.Id == n.DisciplinaId).Name,
-                Grade = n.Value
+                Grade = n.Value,
+                Date = n.Date.ToString("yyyy-MM-dd")
             }).ToList();
 
             dataGridView1.DataSource = table;

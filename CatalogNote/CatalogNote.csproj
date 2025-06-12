@@ -54,6 +54,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsForm.Designer.cs">
+      <DependentUpon>StudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisciplineForm.Designer.cs">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotesForm.Designer.cs">
+      <DependentUpon>NotesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +79,7 @@
       <DependentUpon>StatisticsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CatalogLogic.cs" />
+    <Compile Include="CsvExporter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Entities.cs" />
     <Compile Include="DataStorage.cs" />

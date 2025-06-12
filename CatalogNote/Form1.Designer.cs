@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.studentsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disciplineMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -37,6 +41,10 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.studentsMenuItem,
+            this.disciplineMenuItem,
+            this.notesMenuItem,
+            this.exportMenuItem,
             this.statisticsMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -44,8 +52,36 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // studentsMenuItem
+            //
+            this.studentsMenuItem.Name = "studentsMenuItem";
+            this.studentsMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.studentsMenuItem.Text = "Students";
+            this.studentsMenuItem.Click += new System.EventHandler(this.studentsMenuItem_Click);
+            //
+            // disciplineMenuItem
+            //
+            this.disciplineMenuItem.Name = "disciplineMenuItem";
+            this.disciplineMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.disciplineMenuItem.Text = "Discipline";
+            this.disciplineMenuItem.Click += new System.EventHandler(this.disciplineMenuItem_Click);
+            //
+            // notesMenuItem
+            //
+            this.notesMenuItem.Name = "notesMenuItem";
+            this.notesMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.notesMenuItem.Text = "Notes";
+            this.notesMenuItem.Click += new System.EventHandler(this.notesMenuItem_Click);
+            //
+            // exportMenuItem
+            //
+            this.exportMenuItem.Name = "exportMenuItem";
+            this.exportMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.exportMenuItem.Text = "Export";
+            this.exportMenuItem.Click += new System.EventHandler(this.exportMenuItem_Click);
+            //
             // statisticsMenuItem
-            // 
+            //
             this.statisticsMenuItem.Name = "statisticsMenuItem";
             this.statisticsMenuItem.Size = new System.Drawing.Size(65, 20);
             this.statisticsMenuItem.Text = "Statistics";
@@ -69,6 +105,10 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem studentsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disciplineMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statisticsMenuItem;
     }
 }
