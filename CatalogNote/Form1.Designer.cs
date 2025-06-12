@@ -1,40 +1,52 @@
-﻿namespace CatalogNote
+using System.Windows.Forms;
+
+namespace CatalogNote
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem studentsMenuItem;
+        private ToolStripMenuItem disciplineMenuItem;
+        private ToolStripMenuItem gradesMenuItem;
+        private ToolStripMenuItem exportMenuItem;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.menuStrip1 = new MenuStrip();
+            this.studentsMenuItem = new ToolStripMenuItem();
+            this.disciplineMenuItem = new ToolStripMenuItem();
+            this.gradesMenuItem = new ToolStripMenuItem();
+            this.exportMenuItem = new ToolStripMenuItem();
+            this.SuspendLayout();
+            // menuStrip1
+            this.menuStrip1.Items.AddRange(new ToolStripItem[] {
+                this.studentsMenuItem,
+                this.disciplineMenuItem,
+                this.gradesMenuItem,
+                this.exportMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            // studentsMenuItem
+            this.studentsMenuItem.Text = "Students";
+            this.studentsMenuItem.Click += new System.EventHandler(this.studentsMenuItem_Click);
+            // disciplineMenuItem
+            this.disciplineMenuItem.Text = "Discipline";
+            this.disciplineMenuItem.Click += new System.EventHandler(this.disciplineMenuItem_Click);
+            // gradesMenuItem
+            this.gradesMenuItem.Text = "Grades";
+            this.gradesMenuItem.Click += new System.EventHandler(this.gradesMenuItem_Click);
+            // exportMenuItem
+            this.exportMenuItem.Text = "Export CSV";
+            this.exportMenuItem.Click += new System.EventHandler(this.exportMenuItem_Click);
+            // Form1
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
+            this.Text = "Catalog";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
-
-        #endregion
     }
 }
-
