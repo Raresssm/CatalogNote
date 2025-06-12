@@ -16,5 +16,13 @@ namespace CatalogNote
         {
             InitializeComponent();
         }
+
+        private void statisticsMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var form = new StatisticsForm())
+            {
+                form.ShowDialog();
+            }
+        }
     }
 }
