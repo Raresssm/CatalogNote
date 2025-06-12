@@ -2,7 +2,13 @@
 
 ## Overview
 
-CatalogNote is a Windows Forms application targeting **.NET Framework 4.7.2**. The solution currently contains only the default `Form1` with no additional logic. Running the application simply opens this blank form.
+CatalogNote is a Windows Forms application targeting **.NET Framework 4.7.2**. The application manages students, disciplines and grades using a local JSON file.
+
+Features include:
+
+- CRUD operations for students, disciplines and notes;
+- Viewing statistics such as averages and pass/fail status;
+- Exporting the catalog to CSV.
 
 ## Building on Windows
 
@@ -19,5 +25,5 @@ The solution file `CatalogNote.sln` is located in the repository root.
 
 ## Building on Non‑Windows Platforms
 
-The project targets the classic .NET Framework. Building on platforms other than Windows requires the reference assemblies for .NET Framework 4.7.2 to be installed or the project updated to multi‑target .NET Core/5+ in addition to .NET Framework.
+The project targets the classic .NET Framework. On Linux, Mono's `xbuild` can be used to build the project after installing the `mono-complete` package.
 
