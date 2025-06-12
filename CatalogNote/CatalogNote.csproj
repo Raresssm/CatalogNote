@@ -52,6 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StudentsForm.cs" />
+    <Compile Include="Forms\DisciplinesForm.cs" />
+    <Compile Include="Forms\GradesForm.cs" />
+    <Compile Include="Forms\AddGradeForm.cs" />
+    <Compile Include="Data\DataStorage.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Discipline.cs" />
+    <Compile Include="Models\Grade.cs" />
+    <Compile Include="Utils\Prompt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

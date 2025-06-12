@@ -16,5 +16,23 @@ namespace CatalogNote
         {
             InitializeComponent();
         }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            using (var f = new Forms.StudentsForm())
+                f.ShowDialog();
+        }
+
+        private void btnDisciplines_Click(object sender, EventArgs e)
+        {
+            using (var f = new Forms.DisciplinesForm())
+                f.ShowDialog();
+        }
+
+        private void btnGrades_Click(object sender, EventArgs e)
+        {
+            using (var f = new Forms.GradesForm())
+                f.ShowDialog();
+        }
     }
 }
